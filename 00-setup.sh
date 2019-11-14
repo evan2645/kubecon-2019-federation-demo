@@ -17,6 +17,7 @@ wget https://s3.us-east-2.amazonaws.com/scytale-artifacts/spire/spire-1c28d02-li
 tar -xvzf ./spire-1c28d02-linux-x86_64-glibc.tar.gz
 
 mv spire /opt/
+chown evan:evan /opt/spire/.data
 
 echo
 echo "Installing Ghostunnel"
