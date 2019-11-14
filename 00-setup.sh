@@ -27,6 +27,7 @@ wget https://github.com/square/ghostunnel/releases/download/v1.5.1/ghostunnel-v1
 
 mkdir /opt/ghostunnel
 mv ghostunnel-v1.5.1-linux-amd64-with-pkcs11 /opt/ghostunnel/ghostunnel
+chmod +x /opt/ghostunnel/ghostunnel
 
 echo
 echo "Done."
