@@ -12,9 +12,9 @@ echo
 echo "Installing SPIRE"
 echo
 
-wget https://s3.us-east-2.amazonaws.com/scytale-artifacts/spire/spire-1c28d02-linux-x86_64-glibc.tar.gz
+wget https://github.com/spiffe/spire/releases/download/0.9.0/spire-0.9.0-linux-x86_64-glibc.tar.gz
 
-tar -xvzf ./spire-1c28d02-linux-x86_64-glibc.tar.gz
+tar -xvzf ./spire-0.9.0-linux-x86_64-glibc.tar.gz
 
 mv spire /opt/
 chown evan:evan /opt/spire/.data
