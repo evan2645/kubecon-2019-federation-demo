@@ -2,8 +2,8 @@
 
 set -e
 
-PARENT_ID="spiffe://cluster2/spire-agent"
-SPIFFE_ID="spiffe://cluster2/my-little-service"
+PARENT_ID="spiffe://cluster-2/spire-agent"
+SPIFFE_ID="spiffe://cluster-2/my-little-service"
 
 ENTRY_ID=$(/opt/spire/bin/spire-server entry show | \
         grep -B 1 $SPIFFE_ID | \
