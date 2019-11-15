@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Start spire-agent
-/opt/spire/spire-agent run -config ./spire-agent.conf &
+/opt/spire/bin/spire-agent run -config ./spire-agent.conf &
