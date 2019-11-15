@@ -17,6 +17,7 @@ wget https://github.com/spiffe/spire/releases/download/0.9.0/spire-0.9.0-linux-x
 tar -xvzf ./spire-0.9.0-linux-x86_64-glibc.tar.gz
 
 mv spire-0.9.0 /opt/spire
+mkdir /opt/spire/.data
 chown evan:evan /opt/spire/.data
 
 echo
