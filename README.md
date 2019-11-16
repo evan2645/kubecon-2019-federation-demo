@@ -89,7 +89,9 @@ The output generated from this step can be ignored. The workload is now configur
 
 ## Cleaning Up
 A cleanup script is provided that will remove the SPIRE and Ghostunnel installations, as well as artifacts downloaded as part of the install process. Please note that running processes will need to be stopped manually. Among them are `spire-server`, `spire-agent`, and `python`.
+
+The cleanup script must be run with sudo:
 ```
-evan@spire-server-1:~$ ./90-clean.sh
+evan@spire-server-1:~$ sudo ./90-clean.sh
 ```
 
