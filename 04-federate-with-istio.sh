@@ -2,8 +2,11 @@
 
 set -e
 
+BUNDLE_FILE=$(mktemp)
 echo "Please paste the CA certificate(s) for the trust domain \"cluster-1\":"
-BOOTSTRAP_CERT=$(cat -)
+while read line; do
+        echo "$line" >> $BUNDLE_FILE
+done
 
 PARENT_ID="spiffe://cluster-2/spire-agent"
 SPIFFE_ID="spiffe://cluster-2/my-cool-service"
@@ -13,11 +16,9 @@ ENTRY_ID=$(/opt/spire/bin/spire-server entry show | \
         grep Entry | \
         awk '{print $4}')
 
-tmpfile=$(mktemp)
-echo "$BOOTSTRAP_CERT" > tmpfile
 /opt/spire/bin/spire-server bundle set \
         --id spiffe://cluster-1 \
-        --path $tmpfile
+        --path $BUNDLE_FILE
 
 /opt/spire/bin/spire-server entry update \
         --entryID $ENTRY_ID \
