@@ -3,7 +3,7 @@
 
 The scripts and configuration files in this repository are intended to set up a simple SPIRE deployment, and facilitate the introduction of an Istio cluster to a SPIRE cluster via SPIFFE Federation.
 
-This is an example only. In addition to changes in Istio Pilot, the [Istio Federation Server](https://github.com/evan2645/istio-federation-server) is currently required.
+This is an example only. In addition to changes in Istio Pilot, the [Istio Federation Server](https://github.com/evan2645/istio-federation-server) is currently required to make this demo work in its entirety.
 
 ## Prerequisites and Assumptions
 In optimizing for speed of demo development, this example makes a large number of assumptions:
