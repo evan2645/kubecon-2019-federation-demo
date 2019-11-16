@@ -26,3 +26,5 @@ ENTRY_ID=$(/opt/spire/bin/spire-server entry show | \
         --spiffeID $SPIFFE_ID \
         --selector unix:user:evan \
         --federatesWith spiffe://cluster-1
+
+rm $BUNDLE_FILE
