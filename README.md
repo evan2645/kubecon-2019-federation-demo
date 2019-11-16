@@ -81,7 +81,11 @@ i2IS0z+CD7JbTl02KijYSI6IKA==
 evan@spire-server-1:~$
 ```
 
-The output generated from this step can be ignored. The workload is now configured to federate with Istio.
+The output generated from this step can be ignored. The workload is now configured to federate with Istio. You should see the mTLS proxy log an update:
+
+```
+[25316] 2019/11/16 00:50:28.899498 (spiffe) [DEBUG]: X509SVID workload API update received
+```
 
 ## Cleaning Up
 A cleanup script is provided that will remove the SPIRE and Ghostunnel installations, as well as artifacts downloaded as part of the install process. Please note that running processes will need to be stopped manually. Among them are `spire-server`, `spire-agent`, and `python`.
