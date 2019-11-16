@@ -15,5 +15,5 @@ sleep 1
 
 /opt/spire/bin/spire-server entry create \
         --parentID spiffe://cluster-2/spire-agent \
-        --spiffeID spiffe://cluster-2/my-little-service \
+        --spiffeID spiffe://cluster-2/my-cool-service \
         --selector unix:user:evan
