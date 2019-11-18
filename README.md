@@ -13,6 +13,7 @@ In optimizing for speed of demo development, this example makes a large number o
 * The Linux username being used to run the demo is `evan`
 * The SPIRE Server instance name is `spire-server-1`
 * The SPIRE Agent/workload instance name is `spire-workload-1`
+* The DNS name `example.ifs.com` resolves to the Istio Ingress Controller
 * The SPIFFE ID of the Istio workload calling in is `spiffe://cluster-1/ns/foo/sa/sleep`
 
 At least one of these assumptions are guaranteed to not hold true in other environments. That said, grepping this repository for the referenced strings should expose the spots that need to be udpated to get this demo working in your own environment.
